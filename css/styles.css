@@ -17,6 +17,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
   padding: 94px 0;
 }
@@ -389,7 +395,6 @@ a {
 }
 
 .product-image {
-  display: block;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
