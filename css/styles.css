@@ -11,11 +11,14 @@
 }
 
 body {
-  margin: 0;
   background-color: var(--bg-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 /* основной цвет текса color: #212121;*/
@@ -86,7 +89,7 @@ a {
 .nav {
   display: flex;
 }
-.main-nav {
+.page-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,6 +154,7 @@ a {
 /* bg-color для наглядности */
 
 .hero {
+  padding: 200px 0;
   background-color: #2f303a;
   text-align: center;
 }
@@ -158,6 +162,9 @@ a {
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -169,12 +176,13 @@ a {
 
 .hero-button {
   display: inline-block;
+  border: none;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
   font-family: 'Roboto';
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1.88;
   align-items: center;
   letter-spacing: 0.06em;
   color: var(--bg-color);
@@ -190,15 +198,21 @@ a {
 
 /* section */
 
-.work {
-  text-align: center;
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.section-work {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
+.work {
+  text-align: center;
 }
 
 .menu {
@@ -210,9 +224,6 @@ a {
   margin-bottom: 34px;
 }
 
-.section {
-  padding-top: 94px;
-}
 .section-title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -323,12 +334,12 @@ a {
 
 .button {
   display: inline-block;
+  border: none;
   border-radius: 4px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 6px 22px;
-  min-width: 145px;
-  font-family: 'Roboto';
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -376,15 +387,15 @@ a {
   display: block;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   margin-left: 0;
 }
 
 .product-name {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 4px;
-  margin-left: 0;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 4px;
+  padding-left: 24px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -392,10 +403,11 @@ a {
 }
 
 .product-description {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 20px;
-  margin-right: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
   line-height: 1.88;
   color: var(--secondary-text-color);
 }
