@@ -232,7 +232,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -283,7 +283,7 @@ a {
 /* about */
 
 .about {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .about-list {
@@ -308,7 +308,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 94px;
 }
 
 .team-item {
@@ -325,7 +324,7 @@ a {
   background-color: var(--button-bg-color);
 }
 .team-name {
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -334,8 +333,8 @@ a {
 }
 
 .team-position {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
+  padding-bottom: 30px;
   line-height: 1.18;
   text-align: center;
   color: var(--secondary-text-color);
@@ -404,8 +403,9 @@ a {
 .product-name {
   padding-top: 20px;
   padding-right: 24px;
-  padding-bottom: 4px;
   padding-left: 24px;
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -426,16 +426,16 @@ a {
 
 .footer {
   padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 
-.footer-address {
-  padding-top: 20px;
-  padding-bottom: 60px;
+.footer .logo {
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 .footer .map-link {
-  padding-bottom: 9px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -450,4 +450,13 @@ a {
   font-weight: 400;
   line-height: 1.71;
   color: var(--footer-address-color);
+}
+
+.footer-list-item {
+  margin-bottom: 9px;
+}
+
+.footer-list :last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
