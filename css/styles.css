@@ -131,11 +131,20 @@ a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+.mail .link::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  background-size: contain;
+  background-image: url(../images/icon/envelope.svg);
+  background-repeat: no-repeat;
 }
 
 .nav .link:hover,
@@ -176,7 +185,11 @@ a {
 
 .hero {
   padding: 200px 0;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background/bg-img.jpg);
   background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 }
 
